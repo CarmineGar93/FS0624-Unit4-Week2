@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
         outerloop:
         while(true){
             System.out.println("Inserisci i km percorsi");
