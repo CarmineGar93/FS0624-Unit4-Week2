@@ -32,11 +32,8 @@ public class RandomArray {
                 randoms[Integer.parseInt(x)-1] = (int) (Math.random()* 10) + 1;
                 System.out.println("Il nuovo array è: ");
                 System.out.println(toString());
-            } catch (ArrayIndexOutOfBoundsException ex) {
+            } catch (ArrayIndexOutOfBoundsException | NumberFormatException ex) {
                 System.out.println(ex.getMessage());
-                System.out.println("Riprova");
-            } catch (NumberFormatException e) {
-                System.out.println(e.getMessage());
                 System.out.println("Riprova");
             }
         }
