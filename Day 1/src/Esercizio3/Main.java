@@ -6,6 +6,7 @@ public class Main {
         ContoOnLine mio2 = new ContoOnLine("Carmine", 400, 500);
         mio2.preleva(600);
         mio2.preleva(500);
+        mio2.preleva(200);
         System.out.println(mio2.restituisciSaldo());
     }
 }
