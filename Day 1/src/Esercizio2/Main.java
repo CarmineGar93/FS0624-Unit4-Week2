@@ -11,7 +11,8 @@ public class Main {
             System.out.println("Adesso inserisci i litri di carburante consumati");
             String litri = sc.nextLine();
             try {
-                int rapporto = (Integer.parseInt(km)/Integer.parseInt(litri));
+                double rapporto = (Double.parseDouble(km)/Double.parseDouble(litri));
+                if(Double.isInfinite(rapporto)) throw new ArithmeticException();
                 System.out.println("Il rapporto km/litri consumati é: " + rapporto);
                 break;
             } catch (NumberFormatException ex){
